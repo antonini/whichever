@@ -44,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		A420B0B81D367FA90084D7C8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A44B088B1D39A48E0051FE80 /* open-access  copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "open-access  copy-Info.plist"; path = "/Users/johooper/Desktop/Apps/whichever/open-access  copy-Info.plist"; sourceTree = "<absolute>"; };
+		A44B088B1D39A48E0051FE80 /* copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "copy-Info.plist"; path = "/Users/johooper/Desktop/Apps/whichever/copy-Info.plist"; sourceTree = "<absolute>"; };
 		A4574C6F1D2BB27800376AD4 /* Bathrooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bathrooms.swift; sourceTree = "<group>"; };
 		A47A45091D133FB900529E1F /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		A4BCF0511CF3E5C200675644 /* whichever .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whichever .app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +84,7 @@
 				A4BCF0671CF3E66100675644 /* RealmSwift.framework */,
 				A4BCF0531CF3E5C200675644 /* Safe Bathrooms */,
 				A4BCF0521CF3E5C200675644 /* Products */,
-				A44B088B1D39A48E0051FE80 /* open-access  copy-Info.plist */,
+				A44B088B1D39A48E0051FE80 /* copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
