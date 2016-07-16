@@ -2,4 +2,4 @@ This iOS app (iPhone only) utilizes the Realm mobile database to store and persi
 
 ---
 
-Future iterations. There are a few details I would like to add. One is to add a second table view controller to filter information. The issue I had was making these connections using Realm; I could not get the predicates to work properly. However, the map is usebale in its currnet state. 
+Future iterations. There are a few details I would like to add. One is to add a second table view controller to filter information. The issue I had was making these connections using Realm; I could not get the predicates to work properly. However, the map is usable in its currnet state. 
