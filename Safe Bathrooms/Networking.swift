@@ -24,12 +24,6 @@ class Networking: NSObject {
         //Create GET call
         let task = session.dataTaskWithRequest(urlRequest) { data, response, error in
             
-            // guard error == nil && data != nil else {
-            // print(error)
-            // completionHandler(nil)
-            // return
-            // }
-            
             guard let data = data else {
                 print("Could not find network")
                 completionHandler(nil)

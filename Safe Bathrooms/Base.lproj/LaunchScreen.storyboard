@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,43 +19,20 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PVv-97-nmk">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="FO2-c2-KfC"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="FO2-c2-KfC"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" ambiguous="YES">
+                                <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="169" y="236" width="200" height="0.0"/>
-                                    <mask key="constraints">
-                                        <include reference="FO2-c2-KfC"/>
-                                    </mask>
                                 </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.4823529412" green="0.68627450980000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="PVv-97-nmk" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="216" id="4Vr-Cv-qJ6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PVv-97-nmk" secondAttribute="trailing" constant="11" id="BaL-R8-ZPK"/>
-                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="PVv-97-nmk"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="4Vr-Cv-qJ6"/>
-                                <exclude reference="BaL-R8-ZPK"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="PVv-97-nmk"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="4Vr-Cv-qJ6"/>
-                                <include reference="BaL-R8-ZPK"/>
                             </mask>
                         </variation>
                     </view>

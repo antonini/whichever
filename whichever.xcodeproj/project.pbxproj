@@ -7,61 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A4BCF0571CF3E5C200675644 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BCF0561CF3E5C200675644 /* MapViewController.swift */; };
-		A4BCF05F1CF3E5C200675644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BCF05D1CF3E5C200675644 /* LaunchScreen.storyboard */; };
+		A46A89EF1D4C7F2000C772FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */; };
+		A46A89F11D4C7F3600C772FF /* BathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F01D4C7F3600C772FF /* BathroomViewController.swift */; };
+		A46A89FD1D4C7F6300C772FF /* Bathrooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F21D4C7F6300C772FF /* Bathrooms.swift */; };
+		A46A89FE1D4C7F6300C772FF /* BuildingsAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */; };
+		A46A8A001D4C7F6300C772FF /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F51D4C7F6300C772FF /* CustomPointAnnotation.swift */; };
+		A46A8A021D4C7F6300C772FF /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F71D4C7F6300C772FF /* LoadViewController.swift */; };
+		A46A8A031D4C7F6300C772FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46A89F81D4C7F6300C772FF /* Main.storyboard */; };
+		A46A8A041D4C7F6300C772FF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F91D4C7F6300C772FF /* MapViewController.swift */; };
+		A46A8A051D4C7F6300C772FF /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89FA1D4C7F6300C772FF /* Networking.swift */; };
+		A46A8A061D4C7F6300C772FF /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89FB1D4C7F6300C772FF /* SearchCell.swift */; };
+		A46A8A071D4C7F6300C772FF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89FC1D4C7F6300C772FF /* SearchViewController.swift */; };
+		A46A8A301D4C87D700C772FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A8A2F1D4C87D700C772FF /* Assets.xcassets */; };
+		A46A8A381D4C8B0600C772FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */; };
+		A46A8A6A1D4C8F1500C772FF /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46A8A691D4C8F1500C772FF /* Haneke.framework */; };
+		A46A8A6B1D4C8F2900C772FF /* Haneke.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A46A8A691D4C8F1500C772FF /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4BCF0681CF3E66100675644 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BCF0661CF3E66100675644 /* Realm.framework */; };
 		A4BCF0691CF3E66100675644 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BCF0661CF3E66100675644 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4BCF06A1CF3E66100675644 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BCF0671CF3E66100675644 /* RealmSwift.framework */; };
 		A4BCF06B1CF3E66100675644 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BCF0671CF3E66100675644 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4BCF06F1CF3E6CC00675644 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BCF06E1CF3E6CC00675644 /* Mapbox.framework */; };
 		A4BCF0701CF3E6CC00675644 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BCF06E1CF3E6CC00675644 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4BD2A1F1D2C335100977AD4 /* BathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD2A1E1D2C335100977AD4 /* BathroomViewController.swift */; };
-		A4D517801D3B303200647C7B /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D5177F1D3B303200647C7B /* Networking.swift */; };
-		A4DD30EB1D4C737800446BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4DD30DA1D4C737800446BC4 /* Assets.xcassets */; };
-		A4DD30EC1D4C737800446BC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4DD30DB1D4C737800446BC4 /* LaunchScreen.storyboard */; };
-		A4DD30F11D4C737800446BC4 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD30E11D4C737800446BC4 /* CustomPointAnnotation.swift */; };
-		A4DD30F21D4C737800446BC4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4DD30E21D4C737800446BC4 /* Info.plist */; };
-		A4DD30F41D4C737800446BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4DD30E41D4C737800446BC4 /* Main.storyboard */; };
-		A4DD310A1D4C740300446BC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD30FA1D4C740300446BC4 /* AppDelegate.swift */; };
-		A4DD310C1D4C740300446BC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4DD30FC1D4C740300446BC4 /* LaunchScreen.storyboard */; };
-		A4DD310D1D4C740300446BC4 /* Bathrooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD30FE1D4C740300446BC4 /* Bathrooms.swift */; };
-		A4DD310F1D4C740300446BC4 /* BuildingsAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD31001D4C740300446BC4 /* BuildingsAnnotation.swift */; };
-		A4DD31131D4C740300446BC4 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD31041D4C740300446BC4 /* LoadViewController.swift */; };
-		A4DD31161D4C740300446BC4 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD31071D4C740300446BC4 /* SearchCell.swift */; };
-		A4DD31171D4C740300446BC4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD31081D4C740300446BC4 /* SearchViewController.swift */; };
-		A4DD312A1D4C768F00446BC4 /* Haneke.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4DD31231D4C766300446BC4 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A4DD31221D4C766300446BC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4DD311C1D4C766300446BC4 /* Haneke.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A095C9561980418C00CD0F4C;
-			remoteInfo = Haneke;
-		};
-		A4DD31241D4C766300446BC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4DD311C1D4C766300446BC4 /* Haneke.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A095C9611980418C00CD0F4C;
-			remoteInfo = HanekeTests;
-		};
-		A4DD31261D4C766300446BC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4DD311C1D4C766300446BC4 /* Haneke.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
-			remoteInfo = HanekeDemo;
-		};
-		A4DD31281D4C768300446BC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4DD311C1D4C766300446BC4 /* Haneke.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A095C9551980418C00CD0F4C;
-			remoteInfo = Haneke;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A4BCF06C1CF3E66100675644 /* Embed Frameworks */ = {
@@ -83,59 +50,32 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A4DD312A1D4C768F00446BC4 /* Haneke.framework in CopyFiles */,
+				A46A8A6B1D4C8F2900C772FF /* Haneke.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A420B0B81D367FA90084D7C8 /* LoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
-		A44B088B1D39A48E0051FE80 /* copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "copy-Info.plist"; path = "/Users/johooper/Desktop/Apps/whichever/copy-Info.plist"; sourceTree = "<absolute>"; };
-		A4574C6F1D2BB27800376AD4 /* Bathrooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bathrooms.swift; sourceTree = "<group>"; };
-		A47A45091D133FB900529E1F /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A46A89F01D4C7F3600C772FF /* BathroomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomViewController.swift; sourceTree = "<group>"; };
+		A46A89F21D4C7F6300C772FF /* Bathrooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bathrooms.swift; sourceTree = "<group>"; };
+		A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingsAnnotation.swift; sourceTree = "<group>"; };
+		A46A89F51D4C7F6300C772FF /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
+		A46A89F61D4C7F6300C772FF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A46A89F71D4C7F6300C772FF /* LoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
+		A46A89F81D4C7F6300C772FF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A46A89F91D4C7F6300C772FF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A46A89FA1D4C7F6300C772FF /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		A46A89FB1D4C7F6300C772FF /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		A46A89FC1D4C7F6300C772FF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A46A8A2F1D4C87D700C772FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A46A8A371D4C8B0600C772FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A46A8A691D4C8F1500C772FF /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Haneke.framework; sourceTree = "<group>"; };
 		A4BCF0511CF3E5C200675644 /* whichever .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whichever .app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4BCF0541CF3E5C200675644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4BCF0561CF3E5C200675644 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		A4BCF05B1CF3E5C200675644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A4BCF05E1CF3E5C200675644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A4BCF0601CF3E5C200675644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4BCF0661CF3E66100675644 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		A4BCF0671CF3E66100675644 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		A4BCF06E1CF3E6CC00675644 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
-		A4BD2A1E1D2C335100977AD4 /* BathroomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomViewController.swift; sourceTree = "<group>"; };
-		A4BFCFB21D3376010036F6B5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A4D5177F1D3B303200647C7B /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = ../Networking.swift; sourceTree = "<group>"; };
-		A4DD30AF1D4C546600446BC4 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
-		A4DD30D91D4C737800446BC4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4DD30DA1D4C737800446BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A4DD30DC1D4C737800446BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A4DD30DD1D4C737800446BC4 /* Bathrooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bathrooms.swift; sourceTree = "<group>"; };
-		A4DD30DE1D4C737800446BC4 /* BathroomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomViewController.swift; sourceTree = "<group>"; };
-		A4DD30DF1D4C737800446BC4 /* BuildingsAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingsAnnotation.swift; sourceTree = "<group>"; };
-		A4DD30E11D4C737800446BC4 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
-		A4DD30E21D4C737800446BC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4DD30E31D4C737800446BC4 /* LoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
-		A4DD30E41D4C737800446BC4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A4DD30E51D4C737800446BC4 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		A4DD30E71D4C737800446BC4 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
-		A4DD30E81D4C737800446BC4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		A4DD30FA1D4C740300446BC4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4DD30FB1D4C740300446BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A4DD30FD1D4C740300446BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A4DD30FE1D4C740300446BC4 /* Bathrooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bathrooms.swift; sourceTree = "<group>"; };
-		A4DD30FF1D4C740300446BC4 /* BathroomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomViewController.swift; sourceTree = "<group>"; };
-		A4DD31001D4C740300446BC4 /* BuildingsAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingsAnnotation.swift; sourceTree = "<group>"; };
-		A4DD31021D4C740300446BC4 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
-		A4DD31031D4C740300446BC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4DD31041D4C740300446BC4 /* LoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
-		A4DD31051D4C740300446BC4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A4DD31061D4C740300446BC4 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		A4DD31071D4C740300446BC4 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
-		A4DD31081D4C740300446BC4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		A4DD311C1D4C766300446BC4 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = "../../../../Downloads/HanekeSwift-0.10.1/Haneke.xcodeproj"; sourceTree = "<group>"; };
-		A4EFEEC81D13533A00F45429 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		A4FB1BEA1D0E1669007BCDFB /* BuildingsAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingsAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46A8A6A1D4C8F1500C772FF /* Haneke.framework in Frameworks */,
 				A4BCF06A1CF3E66100675644 /* RealmSwift.framework in Frameworks */,
 				A4BCF0681CF3E66100675644 /* Realm.framework in Frameworks */,
 				A4BCF06F1CF3E6CC00675644 /* Mapbox.framework in Frameworks */,
@@ -155,12 +96,12 @@
 		A4BCF0481CF3E5C200675644 = {
 			isa = PBXGroup;
 			children = (
+				A46A8A691D4C8F1500C772FF /* Haneke.framework */,
 				A4BCF06E1CF3E6CC00675644 /* Mapbox.framework */,
 				A4BCF0661CF3E66100675644 /* Realm.framework */,
 				A4BCF0671CF3E66100675644 /* RealmSwift.framework */,
 				A4BCF0531CF3E5C200675644 /* Safe Bathrooms */,
 				A4BCF0521CF3E5C200675644 /* Products */,
-				A44B088B1D39A48E0051FE80 /* copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,107 +116,22 @@
 		A4BCF0531CF3E5C200675644 /* Safe Bathrooms */ = {
 			isa = PBXGroup;
 			children = (
-				A4DD30D81D4C737800446BC4 /* Safe Bathrooms */,
-				A4DD30C61D4C701C00446BC4 /* Frameworks */,
-				A4BF1D3D1D2BBA0C009C15B9 /* Model */,
-				A4BFCFB21D3376010036F6B5 /* Main.storyboard */,
-				A4DD30AF1D4C546600446BC4 /* CustomPointAnnotation.swift */,
-				A4FB1BEA1D0E1669007BCDFB /* BuildingsAnnotation.swift */,
-				A4BCF0541CF3E5C200675644 /* AppDelegate.swift */,
-				A4D5177F1D3B303200647C7B /* Networking.swift */,
-				A420B0B81D367FA90084D7C8 /* LoadViewController.swift */,
-				A4BCF0561CF3E5C200675644 /* MapViewController.swift */,
-				A4EFEEC81D13533A00F45429 /* SearchViewController.swift */,
-				A4BD2A1E1D2C335100977AD4 /* BathroomViewController.swift */,
-				A47A45091D133FB900529E1F /* SearchCell.swift */,
-				A4BCF05B1CF3E5C200675644 /* Assets.xcassets */,
-				A4BCF05D1CF3E5C200675644 /* LaunchScreen.storyboard */,
-				A4BCF0601CF3E5C200675644 /* Info.plist */,
+				A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */,
+				A46A8A2F1D4C87D700C772FF /* Assets.xcassets */,
+				A46A89F21D4C7F6300C772FF /* Bathrooms.swift */,
+				A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */,
+				A46A89F51D4C7F6300C772FF /* CustomPointAnnotation.swift */,
+				A46A89F61D4C7F6300C772FF /* Info.plist */,
+				A46A89F71D4C7F6300C772FF /* LoadViewController.swift */,
+				A46A89F81D4C7F6300C772FF /* Main.storyboard */,
+				A46A89F91D4C7F6300C772FF /* MapViewController.swift */,
+				A46A89FA1D4C7F6300C772FF /* Networking.swift */,
+				A46A89FB1D4C7F6300C772FF /* SearchCell.swift */,
+				A46A89FC1D4C7F6300C772FF /* SearchViewController.swift */,
+				A46A89F01D4C7F3600C772FF /* BathroomViewController.swift */,
+				A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */,
 			);
 			path = "Safe Bathrooms";
-			sourceTree = "<group>";
-		};
-		A4BF1D3D1D2BBA0C009C15B9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A4574C6F1D2BB27800376AD4 /* Bathrooms.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		A4DD30C61D4C701C00446BC4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A4DD311C1D4C766300446BC4 /* Haneke.xcodeproj */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A4DD30D81D4C737800446BC4 /* Safe Bathrooms */ = {
-			isa = PBXGroup;
-			children = (
-				A4DD30D91D4C737800446BC4 /* AppDelegate.swift */,
-				A4DD30DA1D4C737800446BC4 /* Assets.xcassets */,
-				A4DD30DB1D4C737800446BC4 /* LaunchScreen.storyboard */,
-				A4DD30DD1D4C737800446BC4 /* Bathrooms.swift */,
-				A4DD30DE1D4C737800446BC4 /* BathroomViewController.swift */,
-				A4DD30DF1D4C737800446BC4 /* BuildingsAnnotation.swift */,
-				A4DD30E11D4C737800446BC4 /* CustomPointAnnotation.swift */,
-				A4DD30E21D4C737800446BC4 /* Info.plist */,
-				A4DD30E31D4C737800446BC4 /* LoadViewController.swift */,
-				A4DD30E41D4C737800446BC4 /* Main.storyboard */,
-				A4DD30E51D4C737800446BC4 /* MapViewController.swift */,
-				A4DD30F91D4C740300446BC4 /* Safe Bathrooms */,
-				A4DD30E71D4C737800446BC4 /* SearchCell.swift */,
-				A4DD30E81D4C737800446BC4 /* SearchViewController.swift */,
-				A4DD30E91D4C737800446BC4 /* Source */,
-			);
-			name = "Safe Bathrooms";
-			sourceTree = "<group>";
-		};
-		A4DD30E91D4C737800446BC4 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		A4DD30F91D4C740300446BC4 /* Safe Bathrooms */ = {
-			isa = PBXGroup;
-			children = (
-				A4DD30FA1D4C740300446BC4 /* AppDelegate.swift */,
-				A4DD30FB1D4C740300446BC4 /* Assets.xcassets */,
-				A4DD30FC1D4C740300446BC4 /* LaunchScreen.storyboard */,
-				A4DD30FE1D4C740300446BC4 /* Bathrooms.swift */,
-				A4DD30FF1D4C740300446BC4 /* BathroomViewController.swift */,
-				A4DD31001D4C740300446BC4 /* BuildingsAnnotation.swift */,
-				A4DD31021D4C740300446BC4 /* CustomPointAnnotation.swift */,
-				A4DD31031D4C740300446BC4 /* Info.plist */,
-				A4DD31041D4C740300446BC4 /* LoadViewController.swift */,
-				A4DD31051D4C740300446BC4 /* Main.storyboard */,
-				A4DD31061D4C740300446BC4 /* MapViewController.swift */,
-				A4DD31071D4C740300446BC4 /* SearchCell.swift */,
-				A4DD31081D4C740300446BC4 /* SearchViewController.swift */,
-				A4DD31091D4C740300446BC4 /* Source */,
-			);
-			name = "Safe Bathrooms";
-			sourceTree = "<group>";
-		};
-		A4DD31091D4C740300446BC4 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		A4DD311D1D4C766300446BC4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A4DD31231D4C766300446BC4 /* Haneke.framework */,
-				A4DD31251D4C766300446BC4 /* HanekeTests.xctest */,
-				A4DD31271D4C766300446BC4 /* HanekeDemo.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +152,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A4DD31291D4C768300446BC4 /* PBXTargetDependency */,
 			);
 			name = whichever;
 			productName = "Safe Bathrooms";
@@ -335,12 +190,6 @@
 			mainGroup = A4BCF0481CF3E5C200675644;
 			productRefGroup = A4BCF0521CF3E5C200675644 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A4DD311D1D4C766300446BC4 /* Products */;
-					ProjectRef = A4DD311C1D4C766300446BC4 /* Haneke.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A4BCF0501CF3E5C200675644 /* whichever */,
@@ -348,41 +197,14 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		A4DD31231D4C766300446BC4 /* Haneke.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Haneke.framework;
-			remoteRef = A4DD31221D4C766300446BC4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A4DD31251D4C766300446BC4 /* HanekeTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = HanekeTests.xctest;
-			remoteRef = A4DD31241D4C766300446BC4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A4DD31271D4C766300446BC4 /* HanekeDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = HanekeDemo.app;
-			remoteRef = A4DD31261D4C766300446BC4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		A4BCF04F1CF3E5C200675644 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4DD310C1D4C740300446BC4 /* LaunchScreen.storyboard in Resources */,
-				A4DD30F41D4C737800446BC4 /* Main.storyboard in Resources */,
-				A4BCF05F1CF3E5C200675644 /* LaunchScreen.storyboard in Resources */,
-				A4DD30F21D4C737800446BC4 /* Info.plist in Resources */,
-				A4DD30EB1D4C737800446BC4 /* Assets.xcassets in Resources */,
-				A4DD30EC1D4C737800446BC4 /* LaunchScreen.storyboard in Resources */,
+				A46A8A381D4C8B0600C772FF /* LaunchScreen.storyboard in Resources */,
+				A46A8A301D4C87D700C772FF /* Assets.xcassets in Resources */,
+				A46A8A031D4C7F6300C772FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,50 +244,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4DD310A1D4C740300446BC4 /* AppDelegate.swift in Sources */,
-				A4DD31161D4C740300446BC4 /* SearchCell.swift in Sources */,
-				A4DD310D1D4C740300446BC4 /* Bathrooms.swift in Sources */,
-				A4DD31131D4C740300446BC4 /* LoadViewController.swift in Sources */,
-				A4DD31171D4C740300446BC4 /* SearchViewController.swift in Sources */,
-				A4BCF0571CF3E5C200675644 /* MapViewController.swift in Sources */,
-				A4BD2A1F1D2C335100977AD4 /* BathroomViewController.swift in Sources */,
-				A4DD310F1D4C740300446BC4 /* BuildingsAnnotation.swift in Sources */,
-				A4D517801D3B303200647C7B /* Networking.swift in Sources */,
-				A4DD30F11D4C737800446BC4 /* CustomPointAnnotation.swift in Sources */,
+				A46A89FE1D4C7F6300C772FF /* BuildingsAnnotation.swift in Sources */,
+				A46A8A071D4C7F6300C772FF /* SearchViewController.swift in Sources */,
+				A46A8A061D4C7F6300C772FF /* SearchCell.swift in Sources */,
+				A46A89FD1D4C7F6300C772FF /* Bathrooms.swift in Sources */,
+				A46A8A021D4C7F6300C772FF /* LoadViewController.swift in Sources */,
+				A46A8A051D4C7F6300C772FF /* Networking.swift in Sources */,
+				A46A89F11D4C7F3600C772FF /* BathroomViewController.swift in Sources */,
+				A46A89EF1D4C7F2000C772FF /* AppDelegate.swift in Sources */,
+				A46A8A001D4C7F6300C772FF /* CustomPointAnnotation.swift in Sources */,
+				A46A8A041D4C7F6300C772FF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		A4DD31291D4C768300446BC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Haneke;
-			targetProxy = A4DD31281D4C768300446BC4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		A4BCF05D1CF3E5C200675644 /* LaunchScreen.storyboard */ = {
+		A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A4BCF05E1CF3E5C200675644 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		A4DD30DB1D4C737800446BC4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4DD30DC1D4C737800446BC4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		A4DD30FC1D4C740300446BC4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4DD30FD1D4C740300446BC4 /* Base */,
+				A46A8A371D4C8B0600C772FF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -563,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -574,6 +373,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.josephdhooper.whichever;
 				PRODUCT_NAME = "whichever ";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -582,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -593,6 +395,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.josephdhooper.whichever;
 				PRODUCT_NAME = whichever;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
