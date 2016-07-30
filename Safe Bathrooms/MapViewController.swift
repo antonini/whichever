@@ -11,8 +11,6 @@ import Mapbox
 import CoreLocation
 import RealmSwift
 
-let MapboxAccessToken = "pk.eyJ1IjoiamRob29wZXIiLCJhIjoiY2ltNWZibjYxMDFrMHU0bTY0ZmhkbDN1ZiJ9.QfG6ts2mzoZIg13N-JqMSQ"
-
 class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet var mapView: MGLMapView!
@@ -33,16 +31,12 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     }
     
     func populateMap() {
-        
-        bathrooms = try! Realm().objects(Bathrooms)
-        
         for bathroom in bathrooms {
             let annotation = MGLPointAnnotation()
             let coordinate = CLLocationCoordinate2DMake(bathroom.latitude, bathroom.longitude);
             annotation.coordinate = coordinate
             annotation.title = bathroom.buildingName
             annotation.subtitle = "Availability: \(bathroom.buildingAvailability)"
-            
             annotations.append(annotation)
             mapView.delegate = self
             mapView.addAnnotations(annotations)
@@ -70,33 +64,44 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     
     func mapView(mapView: MGLMapView, leftCalloutAccessoryViewForAnnotation annotation: MGLAnnotation) -> UIView? {
         
-        if (annotation.subtitle! == "Availability: Public"){
+        let imageName = UIImageView()
+        imageName.frame = (frame: CGRectMake(0, 0, 50, 50))
         
-            let imageView = UIImageView(image: UIImage(named: "blueNote")!)
-            self.view.addSubview(imageView)
-            return imageView
-            
-        }
-        
-        if (annotation.subtitle! == "Availability: Limited"){
-            let imageView = UIImageView(image: UIImage(named: "orangeNote")!)
-            self.view.addSubview(imageView)
-            return imageView
-            
-        }
-        
-        if (annotation.subtitle! == "Availability: Limited and Public"){
-            let imageView = UIImageView(image: UIImage(named: "darkblueNote")!)
-            self.view.addSubview(imageView)
-            return imageView
+        if let subtitle = annotation.subtitle {
+            switch subtitle {
+            case "Availability: Public"?: imageName.image = UIImage(named: "blueNote")
+            case "Availability: Limited"?: imageName.image = UIImage(named: "orangeNote")
+            case "Availability: Limited and Public"?: imageName.image = UIImage(named: "darkblueNote")
+            default: return nil
+                
+            }
+            self.view.addSubview(imageName)
+            return imageName
         }
         
         return nil
     }
+            
     
     func mapView(mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         return true
     }
     
+    func mapView(mapView: MGLMapView, rightCalloutAccessoryViewForAnnotation annotation: MGLAnnotation) -> UIView? {
+        return UIButton(type: .DetailDisclosure)
+    }
     
+    func mapView(mapView: MGLMapView, annotation: MGLAnnotation, calloutAccessoryControlTapped control: UIControl) {
+        
+        mapView.deselectAnnotation(annotation, animated: false)
+        let alertController = UIAlertController(title: annotation.title!, message: "Use Search for more details.", preferredStyle: .Alert)
+        let actionOK = UIAlertAction(title: "OK", style: .Default) { (action:UIAlertAction) in
+            
+        }
+        alertController.addAction(actionOK)
+        presentViewController(alertController, animated: true, completion:nil)
+        
+    }
 }
+
+

@@ -15,6 +15,7 @@ class SearchViewController: UITableViewController {
     var searchResults = try! Realm().objects(Bathrooms)
     var bathrooms = try! Realm().objects(Bathrooms).sorted("buildingName", ascending: true)
     var searchController: UISearchController!
+    var image = try! Realm().objects(Bathrooms).sorted("image", ascending: true)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,22 +50,19 @@ class SearchViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "showDetail") {
-            
             let controller = (segue.destinationViewController as! UINavigationController).topViewController as! BathroomViewController
-            
             var bathroom: Bathrooms!
             let indexPath = tableView.indexPathForSelectedRow
             
             if searchController.active {
                 let searchResultsController = searchController.searchResultsController as! UITableViewController
                 let indexPathSearch = searchResultsController.tableView.indexPathForSelectedRow
-                
                 bathroom = searchResults[(indexPathSearch?.row)!]
-//                bathroom = searchResults[indexPathSearch!.row]
             } else {
                 bathroom = bathrooms[indexPath!.row]
             }
             controller.detailBathroom = bathroom
+           
         }
     }
     
@@ -81,8 +79,8 @@ extension SearchViewController: UISearchResultsUpdating {
         filterResultsWithSearchString(searchString)
         let searchResultsController = searchController.searchResultsController as! UITableViewController
         searchResultsController.tableView.reloadData()
+        
     }
-    
 }
 
 extension SearchViewController:  UISearchBarDelegate {

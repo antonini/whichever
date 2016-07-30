@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 import RealmSwift
 
 class Bathrooms: Object {
@@ -29,4 +30,8 @@ class Bathrooms: Object {
     }
     
 }
+
+
+    
+
 
