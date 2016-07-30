@@ -21,7 +21,6 @@
 		A46A8A071D4C7F6300C772FF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89FC1D4C7F6300C772FF /* SearchViewController.swift */; };
 		A46A8A301D4C87D700C772FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A8A2F1D4C87D700C772FF /* Assets.xcassets */; };
 		A46A8A381D4C8B0600C772FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */; };
-		A46A8A6A1D4C8F1500C772FF /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46A8A691D4C8F1500C772FF /* Haneke.framework */; };
 		A4BCF0681CF3E66100675644 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BCF0661CF3E66100675644 /* Realm.framework */; };
 		A4BCF0691CF3E66100675644 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BCF0661CF3E66100675644 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4BCF06A1CF3E66100675644 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BCF0671CF3E66100675644 /* RealmSwift.framework */; };
@@ -110,7 +109,6 @@
 		A46A89FC1D4C7F6300C772FF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A46A8A2F1D4C87D700C772FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46A8A371D4C8B0600C772FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A46A8A691D4C8F1500C772FF /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Haneke.framework; sourceTree = "<group>"; };
 		A4BCF0511CF3E5C200675644 /* whichever .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whichever .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BCF0661CF3E66100675644 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		A4BCF0671CF3E66100675644 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46A8A6A1D4C8F1500C772FF /* Haneke.framework in Frameworks */,
 				A4BCF06A1CF3E66100675644 /* RealmSwift.framework in Frameworks */,
 				A4BCF0681CF3E66100675644 /* Realm.framework in Frameworks */,
 				A4BCF06F1CF3E6CC00675644 /* Mapbox.framework in Frameworks */,
@@ -147,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				A44B65591D4C9B7B00D65640 /* Haneke.xcodeproj */,
-				A46A8A691D4C8F1500C772FF /* Haneke.framework */,
 				A4BCF06E1CF3E6CC00675644 /* Mapbox.framework */,
 				A4BCF0661CF3E66100675644 /* Realm.framework */,
 				A4BCF0671CF3E66100675644 /* RealmSwift.framework */,
