@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A4BCF0501CF3E5C200675644"
-               BuildableName = "whichever.app"
-               BlueprintName = "whichever2"
-               ReferencedContainer = "container:whichever2.xcodeproj">
+               BuildableName = "UNC Gender Neutral Bathrooms .app"
+               BlueprintName = "UNC Gender Neutral Bathrooms "
+               ReferencedContainer = "container:all-gender.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4BCF0501CF3E5C200675644"
-            BuildableName = "whichever.app"
-            BlueprintName = "whichever2"
-            ReferencedContainer = "container:whichever2.xcodeproj">
+            BuildableName = "whichever2 .app"
+            BlueprintName = "whichever"
+            ReferencedContainer = "container:whichever.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4BCF0501CF3E5C200675644"
-            BuildableName = "whichever.app"
-            BlueprintName = "whichever2"
-            ReferencedContainer = "container:whichever2.xcodeproj">
+            BuildableName = "whichever2 .app"
+            BlueprintName = "whichever"
+            ReferencedContainer = "container:whichever.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4BCF0501CF3E5C200675644"
-            BuildableName = "whichever.app"
-            BlueprintName = "whichever2"
-            ReferencedContainer = "container:whichever2.xcodeproj">
+            BuildableName = "UNC Gender Neutral Bathrooms .app"
+            BlueprintName = "UNC Gender Neutral Bathrooms "
+            ReferencedContainer = "container:all-gender.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

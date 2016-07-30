@@ -70,7 +70,7 @@
 		A46A8A2F1D4C87D700C772FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46A8A371D4C8B0600C772FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4840A341D4D02E1006156AB /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Haneke.framework; path = Carthage/Build/iOS/Haneke.framework; sourceTree = "<group>"; };
-		A4BCF0511CF3E5C200675644 /* whichever2 .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whichever2 .app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4BCF0511CF3E5C200675644 /* whichever .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whichever .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BCF0661CF3E66100675644 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		A4BCF0671CF3E66100675644 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		A4BCF06E1CF3E6CC00675644 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		A4BCF0521CF3E5C200675644 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4BCF0511CF3E5C200675644 /* whichever2 .app */,
+				A4BCF0511CF3E5C200675644 /* whichever .app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,9 +142,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A4BCF0501CF3E5C200675644 /* whichever2 */ = {
+		A4BCF0501CF3E5C200675644 /* whichever */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4BCF0631CF3E5C200675644 /* Build configuration list for PBXNativeTarget "whichever2" */;
+			buildConfigurationList = A4BCF0631CF3E5C200675644 /* Build configuration list for PBXNativeTarget "whichever" */;
 			buildPhases = (
 				A4BCF04D1CF3E5C200675644 /* Sources */,
 				A4BCF04E1CF3E5C200675644 /* Frameworks */,
@@ -159,9 +159,9 @@
 			);
 			dependencies = (
 			);
-			name = whichever2;
+			name = whichever;
 			productName = "Safe Bathrooms";
-			productReference = A4BCF0511CF3E5C200675644 /* whichever2 .app */;
+			productReference = A4BCF0511CF3E5C200675644 /* whichever .app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -185,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A4BCF04C1CF3E5C200675644 /* Build configuration list for PBXProject "whichever2" */;
+			buildConfigurationList = A4BCF04C1CF3E5C200675644 /* Build configuration list for PBXProject "whichever" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -204,7 +204,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				A4BCF0501CF3E5C200675644 /* whichever2 */,
+				A4BCF0501CF3E5C200675644 /* whichever */,
 			);
 		};
 /* End PBXProject section */
@@ -399,7 +399,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.josephdhooper.whichever;
-				PRODUCT_NAME = "whichever2 ";
+				PRODUCT_NAME = "whichever ";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -422,7 +422,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.josephdhooper.whichever;
-				PRODUCT_NAME = "whichever2 ";
+				PRODUCT_NAME = "whichever ";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -432,7 +432,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A4BCF04C1CF3E5C200675644 /* Build configuration list for PBXProject "whichever2" */ = {
+		A4BCF04C1CF3E5C200675644 /* Build configuration list for PBXProject "whichever" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4BCF0611CF3E5C200675644 /* Debug */,
@@ -441,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4BCF0631CF3E5C200675644 /* Build configuration list for PBXNativeTarget "whichever2" */ = {
+		A4BCF0631CF3E5C200675644 /* Build configuration list for PBXNativeTarget "whichever" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4BCF0641CF3E5C200675644 /* Debug */,
