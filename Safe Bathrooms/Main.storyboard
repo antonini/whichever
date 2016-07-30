@@ -150,18 +150,18 @@
                                 <exclude reference="950-uO-fBV"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="2R6-FB-GtN"/>
-                                <exclude reference="Ann-1x-X2c"/>
-                                <exclude reference="GdB-VM-2ct"/>
-                                <exclude reference="NDQ-pV-22C"/>
-                                <exclude reference="saB-nI-D21"/>
-                                <exclude reference="yEH-Zk-gt8"/>
                                 <exclude reference="DgJ-db-Uam"/>
                                 <exclude reference="cgf-NR-tMV"/>
                                 <exclude reference="eEL-Pn-JKO"/>
                                 <exclude reference="eOg-8J-yDg"/>
                                 <exclude reference="qKS-6m-dWQ"/>
+                                <exclude reference="2R6-FB-GtN"/>
+                                <exclude reference="Ann-1x-X2c"/>
+                                <exclude reference="GdB-VM-2ct"/>
                                 <exclude reference="Fcm-N5-Uhq"/>
+                                <exclude reference="NDQ-pV-22C"/>
+                                <exclude reference="saB-nI-D21"/>
+                                <exclude reference="yEH-Zk-gt8"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -172,18 +172,18 @@
                                 <include reference="950-uO-fBV"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="2R6-FB-GtN"/>
-                                <include reference="Ann-1x-X2c"/>
-                                <include reference="GdB-VM-2ct"/>
-                                <include reference="NDQ-pV-22C"/>
-                                <include reference="saB-nI-D21"/>
-                                <include reference="yEH-Zk-gt8"/>
                                 <include reference="DgJ-db-Uam"/>
                                 <include reference="cgf-NR-tMV"/>
                                 <include reference="eEL-Pn-JKO"/>
                                 <include reference="eOg-8J-yDg"/>
                                 <include reference="qKS-6m-dWQ"/>
+                                <include reference="2R6-FB-GtN"/>
+                                <include reference="Ann-1x-X2c"/>
+                                <include reference="GdB-VM-2ct"/>
                                 <include reference="Fcm-N5-Uhq"/>
+                                <include reference="NDQ-pV-22C"/>
+                                <include reference="saB-nI-D21"/>
+                                <include reference="yEH-Zk-gt8"/>
                             </mask>
                         </variation>
                     </view>
