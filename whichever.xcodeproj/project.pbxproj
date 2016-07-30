@@ -23,8 +23,8 @@
 		A4BD2A1F1D2C335100977AD4 /* BathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD2A1E1D2C335100977AD4 /* BathroomViewController.swift */; };
 		A4BFCFB31D3376010036F6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BFCFB21D3376010036F6B5 /* Main.storyboard */; };
 		A4D517801D3B303200647C7B /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D5177F1D3B303200647C7B /* Networking.swift */; };
-		A4DD30A01D493F7400446BC4 /* Haneke.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4DD30951D493EA600446BC4 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4DD30B01D4C546600446BC4 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD30AF1D4C546600446BC4 /* CustomPointAnnotation.swift */; };
+		A4DD30B61D4C6D6A00446BC4 /* Haneke.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4DD30951D493EA600446BC4 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4EFEEC91D13533A00F45429 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EFEEC81D13533A00F45429 /* SearchViewController.swift */; };
 		A4FB1BEB1D0E1669007BCDFB /* BuildingsAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FB1BEA1D0E1669007BCDFB /* BuildingsAnnotation.swift */; };
 /* End PBXBuildFile section */
@@ -87,7 +87,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A4DD30A01D493F7400446BC4 /* Haneke.framework in CopyFiles */,
+				A4DD30B61D4C6D6A00446BC4 /* Haneke.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
