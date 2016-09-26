@@ -23,6 +23,8 @@
         @IBOutlet weak var activityController: UIActivityIndicatorView!
         
         var image = try! Realm().objects(Bathrooms).sorted("image", ascending: true)
+        
+
 
         override func viewDidLoad() {
             super.viewDidLoad()

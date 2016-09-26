@@ -12,10 +12,12 @@ import Mapbox
 
 class SearchViewController: UITableViewController {
     
-    var searchResults = try! Realm().objects(Bathrooms)
-    var bathrooms = try! Realm().objects(Bathrooms).sorted("buildingName", ascending: true)
+    var searchResults = try! Realm().objects(Buildings)
+    var buildings = try! Realm().objects(Buildings).sorted("buildingID", ascending: true)
     var searchController: UISearchController!
     var image = try! Realm().objects(Bathrooms).sorted("image", ascending: true)
+    
+    var annotation :BuildingsAnnotation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,28 +50,28 @@ class SearchViewController: UITableViewController {
         
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if (segue.identifier == "showDetail") {
-            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! BathroomViewController
-            var bathroom: Bathrooms!
-            let indexPath = tableView.indexPathForSelectedRow
-            
-            if searchController.active {
-                let searchResultsController = searchController.searchResultsController as! UITableViewController
-                let indexPathSearch = searchResultsController.tableView.indexPathForSelectedRow
-                bathroom = searchResults[(indexPathSearch?.row)!]
-            } else {
-                bathroom = bathrooms[indexPath!.row]
-            }
-            controller.detailBathroom = bathroom
-           
-        }
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+//        if (segue.identifier == "showDetail") {
+//            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! BathroomViewController
+//            var bathroom: Bathrooms!
+//            let indexPath = tableView.indexPathForSelectedRow
+//            
+//            if searchController.active {
+//                let searchResultsController = searchController.searchResultsController as! UITableViewController
+//                let indexPathSearch = searchResultsController.tableView.indexPathForSelectedRow
+//                bathroom = searchResults[(indexPathSearch?.row)!]
+//            } else {
+//                bathroom = bathrooms[indexPath!.row]
+//            }
+//            controller.detailBathroom = bathroom
+//           
+//        }
+//    }
     
     func filterResultsWithSearchString(searchString: String) {
         let predicate = NSPredicate(format: "buildingName CONTAINS [c]%@", searchString)
         let realm = try! Realm()
-        searchResults = realm.objects(Bathrooms).filter(predicate)
+        searchResults = realm.objects(Buildings).filter(predicate)
     }
     
 }
@@ -98,29 +100,32 @@ extension SearchViewController {
         if searchController.active && searchController.searchBar.text != "" {
             return searchResults.count
         }
-        return bathrooms.count
+        return buildings.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = self.tableView.dequeueReusableCellWithIdentifier("SearchCell") as! SearchCell
         
-        let bathroom: Bathrooms
+        let building: Buildings
         
         if searchController.active && searchController.searchBar.text != "" {
-            bathroom = searchResults[indexPath.row]
+            building = searchResults[indexPath.row]
         } else {
-            bathroom = bathrooms[indexPath.row]
+            building = buildings[indexPath.row]
         }
         
-        cell.titleLabel.text = bathroom.buildingName
-        cell.subtitleLabel.text = ("Room Number: \(bathroom.roomNumber)")
+        cell.titleLabel.text = building.buildingName
+        cell.subtitleLabel.text = ("Number of Rooms: tbd")
+            //\(building.buildingID)")
         
-        switch bathroom.roomAvailability {
+        switch building.buildingAvailability {
         case "Public":
             cell.dbImage.image = UIImage(named: "blue")
         case "Limited":
             cell.dbImage.image = UIImage(named: "orange")
+        case "Limited and Public":
+            cell.dbImage.image = UIImage(named: "darkblueNote")
         default:
             cell.dbImage.image = UIImage(named: "blue")
         }

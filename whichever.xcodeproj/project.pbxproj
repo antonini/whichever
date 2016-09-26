@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A424CDEE1D94797000D8BB27 /* BuildingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CDED1D94797000D8BB27 /* BuildingCell.swift */; };
+		A424CDF11D948B3600D8BB27 /* BuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CDF01D948B3600D8BB27 /* BuildingViewController.swift */; };
+		A424CDF31D99AFCB00D8BB27 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CDF21D99AFCB00D8BB27 /* Buildings.swift */; };
 		A46A89EF1D4C7F2000C772FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */; };
 		A46A89F11D4C7F3600C772FF /* BathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F01D4C7F3600C772FF /* BathroomViewController.swift */; };
 		A46A89FD1D4C7F6300C772FF /* Bathrooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F21D4C7F6300C772FF /* Bathrooms.swift */; };
@@ -55,6 +58,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A424CDED1D94797000D8BB27 /* BuildingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingCell.swift; sourceTree = "<group>"; };
+		A424CDF01D948B3600D8BB27 /* BuildingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildingViewController.swift; path = ../BuildingViewController.swift; sourceTree = "<group>"; };
+		A424CDF21D99AFCB00D8BB27 /* Buildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
 		A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A46A89F01D4C7F3600C772FF /* BathroomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomViewController.swift; sourceTree = "<group>"; };
 		A46A89F21D4C7F6300C772FF /* Bathrooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bathrooms.swift; sourceTree = "<group>"; };
@@ -119,7 +125,9 @@
 				A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */,
 				A46A8A2F1D4C87D700C772FF /* Assets.xcassets */,
 				A46A89F21D4C7F6300C772FF /* Bathrooms.swift */,
+				A424CDF21D99AFCB00D8BB27 /* Buildings.swift */,
 				A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */,
+				A424CDF01D948B3600D8BB27 /* BuildingViewController.swift */,
 				A46A89F51D4C7F6300C772FF /* CustomPointAnnotation.swift */,
 				A46A89F61D4C7F6300C772FF /* Info.plist */,
 				A46A89F71D4C7F6300C772FF /* LoadViewController.swift */,
@@ -127,6 +135,7 @@
 				A46A89F91D4C7F6300C772FF /* MapViewController.swift */,
 				A46A89FA1D4C7F6300C772FF /* Networking.swift */,
 				A46A89FB1D4C7F6300C772FF /* SearchCell.swift */,
+				A424CDED1D94797000D8BB27 /* BuildingCell.swift */,
 				A46A89FC1D4C7F6300C772FF /* SearchViewController.swift */,
 				A46A89F01D4C7F3600C772FF /* BathroomViewController.swift */,
 				A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */,
@@ -270,15 +279,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A424CDF11D948B3600D8BB27 /* BuildingViewController.swift in Sources */,
 				A46A89FE1D4C7F6300C772FF /* BuildingsAnnotation.swift in Sources */,
 				A46A8A071D4C7F6300C772FF /* SearchViewController.swift in Sources */,
 				A46A8A061D4C7F6300C772FF /* SearchCell.swift in Sources */,
+				A424CDEE1D94797000D8BB27 /* BuildingCell.swift in Sources */,
 				A46A89FD1D4C7F6300C772FF /* Bathrooms.swift in Sources */,
 				A46A8A021D4C7F6300C772FF /* LoadViewController.swift in Sources */,
 				A46A8A051D4C7F6300C772FF /* Networking.swift in Sources */,
 				A46A89F11D4C7F3600C772FF /* BathroomViewController.swift in Sources */,
 				A46A89EF1D4C7F2000C772FF /* AppDelegate.swift in Sources */,
 				A46A8A001D4C7F6300C772FF /* CustomPointAnnotation.swift in Sources */,
+				A424CDF31D99AFCB00D8BB27 /* Buildings.swift in Sources */,
 				A46A8A041D4C7F6300C772FF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

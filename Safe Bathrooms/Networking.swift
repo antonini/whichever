@@ -64,6 +64,7 @@ class Networking: NSObject {
                         
                         //Write files to to Realm mobile database
                         realm.create(Bathrooms.self, value: location, update: true)
+                        realm.create(Buildings.self, value: location, update: true)
                         
                     }
                     
