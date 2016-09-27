@@ -14,7 +14,6 @@ class BuildingViewController: UITableViewController {
     var bathrooms = try! Realm().objects(Bathrooms).sorted("buildingName", ascending: true)
     var image = try! Realm().objects(Bathrooms).sorted("image", ascending: true)
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

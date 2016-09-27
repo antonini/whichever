@@ -17,6 +17,8 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     var annotations = [MGLPointAnnotation]()
     var bathrooms = try! Realm().objects(Bathrooms)
     
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -81,7 +83,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         
         return nil
     }
-            
+    
     
     func mapView(mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         return true
@@ -93,25 +95,15 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     
     func mapView(mapView: MGLMapView, annotation: MGLAnnotation, calloutAccessoryControlTapped control: UIControl) {
         performSegueWithIdentifier("room", sender: annotation.title!)
-    
-    }
-
-override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    if (segue.identifier == "room" )
-    {
-    segue.destinationViewController as! SearchViewController
-    
         
-
-
-//        mapView.deselectAnnotation(annotation, animated: false)
-//        let alertController = UIAlertController(title: annotation.title!, message: "Use Search for more details.", preferredStyle: .Alert)
-//        let actionOK = UIAlertAction(title: "OK", style: .Default) { (action:UIAlertAction) in
-//        }
-//
-//        alertController.addAction(actionOK)
-//        presentViewController(alertController, animated: true, completion:nil)
-
-}
-}
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "room" )
+        {
+            let controller = segue.destinationViewController as! BuildingViewController
+            controller.bathrooms = bathrooms
+            
+        }
+    }
 }
