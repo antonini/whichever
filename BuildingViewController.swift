@@ -11,13 +11,16 @@ import RealmSwift
 
 class BuildingViewController: UITableViewController {
     
-    var bathrooms = try! Realm().objects(Bathrooms).sorted("buildingName", ascending: true)
-    var image = try! Realm().objects(Bathrooms).sorted("image", ascending: true)
+    var buildingName:String?
+    var bathrooms: Results<(Bathrooms)>?
+    var image: Results<(Bathrooms)>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        if let buildingNameObj = buildingName{
+            bathrooms = try! Realm().objects(Bathrooms).filter("buildingName == '\(buildingNameObj)'").sorted("buildingName", ascending: true)
+            image = try! Realm().objects(Bathrooms).sorted("image", ascending: true)
+        }
     }
     
     @IBAction func unwindToMap(segue:UIStoryboardSegue) {
@@ -33,7 +36,9 @@ class BuildingViewController: UITableViewController {
             let controller = (segue.destinationViewController as! UINavigationController).topViewController as! BathroomViewController
             var bathroom: Bathrooms!
             let indexPath = tableView.indexPathForSelectedRow
-            bathroom = bathrooms[indexPath!.row]
+            if let bathroomsObj = bathrooms{
+                bathroom = bathroomsObj[indexPath!.row]
+            }
             controller.detailBathroom = bathroom
             
         }
@@ -44,26 +49,32 @@ class BuildingViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return bathrooms.count
+        if let bathroomsObj = bathrooms{
+            return bathroomsObj.count
+        }else{
+            return 0
+        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("BuildingCell") as! BuildingCell
         
         let bathroom: Bathrooms
-        bathroom = bathrooms[indexPath.row]
-        cell.titleLabel.text = bathroom.buildingName
-        cell.subtitleLabel.text = ("Room Number: \(bathroom.roomNumber)")
-        
-        switch bathroom.roomAvailability {
-        case "Public":
-            cell.dbImage.image = UIImage(named: "blue")
-        case "Limited":
-            cell.dbImage.image = UIImage(named: "orange")
-        default:
-            cell.dbImage.image = UIImage(named: "blue")
+        if let bathroomsObj = bathrooms{
+            bathroom = bathroomsObj[indexPath.row]
+            cell.titleLabel.text = bathroom.buildingName
+            cell.subtitleLabel.text = ("Room Number: \(bathroom.roomNumber)")
+            
+            switch bathroom.roomAvailability {
+            case "Public":
+                cell.dbImage.image = UIImage(named: "blue")
+            case "Limited":
+                cell.dbImage.image = UIImage(named: "orange")
+            default:
+                cell.dbImage.image = UIImage(named: "blue")
+            }
         }
-        
+
         return cell
     }
     

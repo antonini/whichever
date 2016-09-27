@@ -134,4 +134,10 @@ extension SearchViewController {
         
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let buildingViewController = storyboard?.instantiateViewControllerWithIdentifier("BuildingViewController") as! BuildingViewController
+        buildingViewController.buildingName = buildings[indexPath.row].buildingName
+        navigationController?.pushViewController(buildingViewController, animated: true)
+    }
+    
 }

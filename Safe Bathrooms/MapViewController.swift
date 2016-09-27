@@ -103,7 +103,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         {
             let controller = segue.destinationViewController as! BuildingViewController
             controller.bathrooms = bathrooms
-            
+            controller.buildingName = sender as? String
         }
     }
 }
